@@ -7,14 +7,14 @@ export default function IndividualExperience({ project, handleToggle }) {
     <Container id="popup">
       <div className="animated fadeInLeft fill-screen d-flex flex-column align-items-center text-primary">
         <h4 className="p-4">{project.title}</h4>
-        <a href={project.hostedURL}>
+        <a className="d-flex flex-column align-items-center" href={project.hostedURL}>
           <img
             src={project.img}
             alt={project.title}
-            className="w-100 p-1 border border-warning"
+            className="w-75 p-1 border border-warning"
           />
         </a>
-        <p className="p-4 text-secondary">{project.description}</p>
+        <p className="p-5 text-secondary text-center">{project.description}</p>
 
         <Button onClick={handleToggle} className="btn btn-secondary">
           X
