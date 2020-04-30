@@ -95,5 +95,8 @@ button.btn.btn-secondary {
     left: 5px;
     bottom: 10px;
   }
-  
+  p.p-5.text-secondary.text-center {
+    padding-left: 10px !important;
+    padding-right:10px !important;
+  }
 }

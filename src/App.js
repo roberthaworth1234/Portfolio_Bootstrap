@@ -64,7 +64,7 @@ export default class App extends Component {
                        icon: "https://img.icons8.com/nolan/64/react-native.png",
                        img: require("./Images/Screenshot8.png"),
                        description:
-                         "Made during our final project phase at Northcoders.  A nice to have option for our Ambiscape sound generator was a React-native mobile version of the application.  It gave me insight into the differences building our Web App as a mobile version.  Learning styling syntax, spiking audio libraries such as react native audio/video and expo-av. And the difficulties of matching the audio functionality across two platforms. This is currently unhosted, but can be run locally if you would like to fork the repository. ",
+                         "A nice to have option for our Ambiscape sound generator was a React-native mobile version.  It gave me insight into the differences building our Web App, as a mobile version.  Learning styling syntax, spiking audio libraries such as react native audio/video and expo-av. And the difficulties of matching the audio functionality across two platforms.",
                        title: "Ambiscape - React native mobile ",
                        hostedURL:
                          "https://github.com/Team-Hypnotoad/FE-Ambiscape-Mobile",
