@@ -85,7 +85,28 @@ button.btn.btn-secondary {
   height: 60px;
   width: 60px;
 }
-@media only screen and (max-width: 400px) {
+#interests-heading {
+  width:100%;
+}
+.interests {
+  margin: 40px 0px 0px 0px;
+  border-radius: 50%;
+  z-index: -1;
+  height: 200px;
+  width: 200px;
+}
+.references {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  background: #343a40;
+  color: grey;
+}
+.references a {
+  font-family: "Roboto Condensed", sans-serif;
+  color: grey !important;
+}
+@media only screen and (max-width: 480px) {
   h4.p-4 {
     margin: 0px 10px 0px 50px;
   }
@@ -95,6 +116,9 @@ button.btn.btn-secondary {
     left: 5px;
     bottom: 10px;
   }
+  #northcoders-experience {
+  height: 580px;
+}
   p.p-5.text-secondary.text-center {
     padding-left: 10px !important;
     padding-right:10px !important;
