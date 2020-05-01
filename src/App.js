@@ -175,23 +175,22 @@ export default class App extends Component {
                          </Container>
                        </section>
                        <Interests images={this.state.images} />
-                       <section className='references'>
-                         <p>roberthaworth1234@hotmail.com</p>
-                         <a
-                      
-                           href="https://icons8.com/icon/38561/postgresql"
-                         >
-                           PostgreSQL /
-                         </a>
-                         <a href="https://icons8.com/icon/44019/linkedin">
-                           LinkedIn /
-                         </a>
-                         <a href="https://icons8.com/icon/52539/github">
-                           GitHub &
-                         </a>
-                         <a href="https://icons8.com/icon/bYzsf9Bmocst/twitter">
-                           Twitter icon by Icons8
-                         </a>
+                       <section className="references">
+                        
+                           <p>roberthaworth1234@hotmail.com</p>
+                           <a href="https://icons8.com/icon/38561/postgresql">
+                             PostgreSQL /
+                           </a>
+                           <a href="https://icons8.com/icon/44019/linkedin">
+                             LinkedIn /
+                           </a>
+                           <a href="https://icons8.com/icon/52539/github">
+                             GitHub &
+                           </a>
+                           <a href="https://icons8.com/icon/bYzsf9Bmocst/twitter">
+                             Twitter icon by Icons8
+                           </a>
+                         
                        </section>
                      </>
                    );

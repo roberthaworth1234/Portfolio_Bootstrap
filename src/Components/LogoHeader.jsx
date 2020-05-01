@@ -6,7 +6,9 @@ export default function LogoHeader() {
     <Container fluid className='text-center'>
       {/* <Row> */}
       {/* <Col md={{ span: 6, offset: 3 }}> */}
-      <div><img src={require('../Images/logoRH.png')} alt="Rob Haworth Logo"/></div>
+     
+        <img src={require('../Images/logoRH1.png')} alt="Rob Haworth Logo"/>
+    
       {/* </Col> */}
       {/* </Row> */}
     </Container>
