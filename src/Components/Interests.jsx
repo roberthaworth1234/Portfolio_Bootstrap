@@ -10,7 +10,7 @@ export default function Interests({ images }) {
       <div className="underline"></div>
       {/* <div className="d-flex flex-wrap"> */}
 
-      <Row>
+      <Row className="overflow-hidden">
         {images.map((image, i) => {
           return i < 5 ? (
             <Col key={image.name} className='p-0 d-flex flex-column align-items-center'>

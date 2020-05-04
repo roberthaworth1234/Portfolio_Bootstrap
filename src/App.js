@@ -8,6 +8,7 @@ import Bio from "./Components/Bio";
 import Experience from "./Components/Experience";
 import NorthcodersExperience from "./Components/NorthcodersExperience";
 import Interests from "./Components/Interests";
+import CV from './Components/CV';
 import { Router } from "@reach/router";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -19,6 +20,11 @@ export default class App extends Component {
                        path: require("./Images/MappedImg/1.jpg"),
                        description: "Emissions Monitoring",
                        loaded: false
+                     }, {
+                       name: "Whale Tail",
+                       path: require("./Images/MappedImg/3.jpg"),
+                       description: "Whale Tail Slap",
+                       loaded: false
                      },
                      {
                        name: "Airdale Terrier",
@@ -27,53 +33,48 @@ export default class App extends Component {
                        loaded: false
                      },
 
-                     {
-                       name: "Whale Tail",
-                       path: require("./Images/MappedImg/3.jpg"),
-                       description: "Whale Tail Slap",
-                       loaded: false
-                     },
+                     
 
                      {
-                       name: "Dog on Mamtor",
-                       path: require("./Images/MappedImg/4.jpg"),
-                       description: "Dog walk on Mamtor",
-                       loaded: false
+                      name: "Man and Woman walking in river",
+                      path: require("./Images/MappedImg/9.jpg"),
+                      description: "Fraser island river walk",
+                      loaded: false
                      },
                      {
                        name: "Airial Beach",
                        path: require("./Images/MappedImg/5.jpg"),
                        description: "Airial shot at Whitsundays",
                        loaded: false
-                     },
+                      },
 
-                     {
-                       name: "Sailing a yatch",
-                       path: require("./Images/MappedImg/6.jpg"),
-                       description: "Sailing the Amadeus",
-                       loaded: false
+                      {
+                        name: "Sailing a yatch",
+                        path: require("./Images/MappedImg/6.jpg"),
+                        description: "Sailing the Amadeus",
+                        loaded: false
                      },
                      {
                        name: "Team activity",
                        path: require("./Images/MappedImg/7.jpg"),
                        description: "Total Warrior charity event",
                        loaded: false
-                     },
-                     {
-                       name: "Nara Inlet Beach",
-                       path: require("./Images/MappedImg/8.jpg"),
+                      },
+                      {
+                        name: "Nara Inlet Beach",
+                        path: require("./Images/MappedImg/8.jpg"),
                        description: "Nara Inlet Beach",
                        loaded: false
-                     },
-                     {
-                       name: "Man and Woman walking in river",
-                       path: require("./Images/MappedImg/9.jpg"),
-                       description: "Fraser island river walk",
-                       loaded: false
-                     },
-                     {
-                       name: "Manchester Town Hall",
-                       path: require("./Images/MappedImg/10.jpg"),
+                      },
+                         {
+                           name: "Dog on Mamtor",
+                           path: require("./Images/MappedImg/4.jpg"),
+                           description: "Dog walk on Mamtor",
+                           loaded: false
+                         },
+                      {
+                        name: "Manchester Town Hall",
+                        path: require("./Images/MappedImg/10.jpg"),
                        description: "Manchester Town Hall",
                        loaded: false
                      }
@@ -158,7 +159,7 @@ export default class App extends Component {
                            <Row className="pt-4">
                              {this.state.experience.map((project, i) => {
                                return i !== 3 ? (
-                                 <Col key={project.id} xs={6} md={4}>
+                                 <Col className='overflow-hidden' key={project.id} xs={6} md={4}>
                                    <Experience project={project} />
                                  </Col>
                                ) : (
@@ -174,23 +175,32 @@ export default class App extends Component {
                            </Row>
                          </Container>
                        </section>
+                       <section>
+
                        <Interests images={this.state.images} />
+                       </section>
+                       <section className="darker">
+                       <CV />
+                       </section>
                        <section className="references">
-                        
-                           <p>roberthaworth1234@hotmail.com</p>
-                           <a href="https://icons8.com/icon/38561/postgresql">
-                             PostgreSQL /
-                           </a>
-                           <a href="https://icons8.com/icon/44019/linkedin">
-                             LinkedIn /
-                           </a>
-                           <a href="https://icons8.com/icon/52539/github">
-                             GitHub &
-                           </a>
-                           <a href="https://icons8.com/icon/bYzsf9Bmocst/twitter">
-                             Twitter icon by Icons8
-                           </a>
-                         
+                         {/* <img
+                            style={{width:'200px'}}
+                           src={require("./File/CV1.png")}
+                           alt="CV"
+                         /> */}
+                         <p>roberthaworth1234@hotmail.com</p>
+                         <a href="https://icons8.com/icon/38561/postgresql">
+                           PostgreSQL /
+                         </a>
+                         <a href="https://icons8.com/icon/44019/linkedin">
+                           LinkedIn /
+                         </a>
+                         <a href="https://icons8.com/icon/52539/github">
+                           GitHub &
+                         </a>
+                         <a href="https://icons8.com/icon/bYzsf9Bmocst/twitter">
+                           Twitter icon by Icons8
+                         </a>
                        </section>
                      </>
                    );
