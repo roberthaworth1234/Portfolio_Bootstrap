@@ -2,7 +2,7 @@
   "name": "bootstrap-app",
   "version": "0.1.0",
   "private": true,
-  "homaepage": "rob-haworth.org",
+  "homepage": "https://rob-haworth.org/",
   "dependencies": {
     "@reach/router": "^1.3.3",
     "@testing-library/jest-dom": "^4.2.4",
@@ -17,6 +17,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
