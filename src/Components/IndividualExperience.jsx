@@ -1,11 +1,11 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Row } from "react-bootstrap";
 // import {Animated } from 'react-animated-css'
 
 export default function IndividualExperience({ project, handleToggle }) {
   return (
     <Container id="popup">
-      <div className="animated fadeInLeft fill-screen d-flex flex-column align-items-center text-primary">
+      <Row className="animated fadeInLeft fill-screen d-flex flex-column align-items-center text-primary">
         <h4 className="p-4">{project.title}</h4>
         <a className="d-flex flex-column align-items-center" href={project.hostedURL}>
           <img
@@ -25,7 +25,7 @@ export default function IndividualExperience({ project, handleToggle }) {
             alt="github icon"
           />
         </a>
-      </div>
+      </Row>
     </Container>
   );
 }

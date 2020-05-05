@@ -2,7 +2,7 @@
   "name": "bootstrap-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rob-haworth.org/",
+  "homepage": "https://rob-haworth.org",
   "dependencies": {
     "@reach/router": "^1.3.3",
     "@testing-library/jest-dom": "^4.2.4",

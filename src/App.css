@@ -57,10 +57,10 @@ div.mb-5.card {
 /* Popup section for 5 main projects */
 .fill-screen {
   position: absolute;
-  left: 50px;
-  right: 50px;
-  top: 50px;
-  bottom: 50px;
+  left: 30px;
+  right: 30px;
+  top: 20px;
+  bottom: 20px;
   background-color: white;
   z-index: 10;
   border-radius: 20px;

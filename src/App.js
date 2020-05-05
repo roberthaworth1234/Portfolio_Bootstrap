@@ -188,7 +188,7 @@ export default class App extends Component {
                            src={require("./File/CV1.png")}
                            alt="CV"
                          /> */}
-                         <p>roberthaworth1234@hotmail.com</p>
+                         <p>Email: <a href="mailto:roberthaworth1234@hotmail.com">roberthaworth1234@hotmail.com</a></p>
                          <a href="https://icons8.com/icon/38561/postgresql">
                            PostgreSQL /
                          </a>
