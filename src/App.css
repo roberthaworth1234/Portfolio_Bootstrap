@@ -7,6 +7,15 @@
   height: 250px;
 
 }
+a {
+  text-decoration: none ;
+  color: lightgrey;
+}
+a:hover {
+   text-decoration: none;
+    color: lightblue;
+}
+
 h1,
 h2,
 h3,

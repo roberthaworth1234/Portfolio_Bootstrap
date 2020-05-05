@@ -5,7 +5,11 @@ export default function Bio() {
   return (
     <Container>
       <Row className="mt-5 mb-5 text-center">
-        <Col className="animated bounceInLeft" xs={12} md={6}>
+        <Col
+          className="animated bounceInLeft"
+          xs={12}
+          md={6}
+        >
           <main className="About">
             <h1>About me</h1>
             <p>

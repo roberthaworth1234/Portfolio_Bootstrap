@@ -1,6 +1,6 @@
-import React from 'react'
-import {Link } from '@reach/router'
-import { Nav, Navbar } from 'react-bootstrap';
+import React from "react";
+import { Link } from "@reach/router";
+import { Nav, Navbar } from "react-bootstrap";
 
 export default function Navigation() {
   return (
@@ -9,13 +9,13 @@ export default function Navigation() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto px-5">
-          <Nav.Link>
+          <Nav className="mr-auto px-2">
             {" "}
             <Link to="/">Home</Link>
-          </Nav.Link>
-          <Nav.Link>
+          </Nav>
+          <Nav className="mr-auto px-2">
             <Link to="/Experience">Experience</Link>
-          </Nav.Link>
+          </Nav>
           {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
