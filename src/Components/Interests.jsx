@@ -8,19 +8,21 @@ export default function Interests({ images }) {
         Interests / Gallery
       </h2>
       <div className="underline"></div>
-      {/* <div className="d-flex flex-wrap"> */}
 
       <Row className="overflow-hidden">
         {images.map((image, i) => {
           return i < 5 ? (
-            <Col key={image.name} className='p-0 d-flex flex-column align-items-center'>
-             
-                <img
-                  title={image.description}
-                  className="interests"
-                  src={image.path}
-                  alt={image.name}
-                />
+            <Col
+              key={image.name}
+              className="p-0 d-flex flex-column align-items-center"
+            >
+              <img
+                title={image.description}
+                className="interests"
+                src={image.path}
+                alt={image.name}
+              />
+              <p className="hidden-text">{image.description}</p>
             </Col>
           ) : null;
         })}
@@ -38,11 +40,11 @@ export default function Interests({ images }) {
                 src={image.path}
                 alt={image.name}
               />
+              <p className="hidden-text">{image.description}</p>
             </Col>
           ) : null;
         })}
       </Row>
-        {/* </div> */}
     </Container>
   );
 }

@@ -8,7 +8,9 @@ import Bio from "./Components/Bio";
 import Experience from "./Components/Experience";
 import NorthcodersExperience from "./Components/NorthcodersExperience";
 import Interests from "./Components/Interests";
+import NewProjects from './Components/NewProjects'
 import CV from './Components/CV';
+import References from './Components/References'
 import { Router } from "@reach/router";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -182,25 +184,11 @@ export default class App extends Component {
                        <section className="darker">
                        <CV />
                        </section>
+                       <section>
+                         <NewProjects />
+                         </section>
                        <section className="references">
-                         {/* <img
-                            style={{width:'200px'}}
-                           src={require("./File/CV1.png")}
-                           alt="CV"
-                         /> */}
-                         <p>Email: <a href="mailto:roberthaworth1234@hotmail.com">roberthaworth1234@hotmail.com</a></p>
-                         <a href="https://icons8.com/icon/38561/postgresql">
-                           PostgreSQL /
-                         </a>
-                         <a href="https://icons8.com/icon/44019/linkedin">
-                           LinkedIn /
-                         </a>
-                         <a href="https://icons8.com/icon/52539/github">
-                           GitHub &
-                         </a>
-                         <a href="https://icons8.com/icon/bYzsf9Bmocst/twitter">
-                           Twitter icon by Icons8
-                         </a>
+                       <References />
                        </section>
                      </>
                    );
