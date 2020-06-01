@@ -28,10 +28,10 @@ export default function NewProjects() {
         <Col xs={{ span: 12 }} md lg={{ span: 6 }}>
           <h4>React Native Mobile</h4>
           <p>
-            This was a small test sprint completed recently which utilises the
-            guardian news api to serve as news search. This helped me learn to
-            implement forms, swipeable pages and further react-native syntax
-            knowledge.
+            This was a small tech test sprint completed recently which utilises
+            the guardian news api to serve as news search. This helped me learn
+            to implement forms, swipeable pages and further my react-native
+            syntax knowledge.
           </p>
           <a href="https://github.com/roberthaworth1234/tote-test">
             <img
