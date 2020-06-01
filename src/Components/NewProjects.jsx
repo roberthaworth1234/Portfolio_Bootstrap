@@ -10,12 +10,12 @@ export default function NewProjects() {
         <Col xs={{ span: 12 }} md lg={{ span: 6 }}>
           <h4>Animal Santuary React App with Java Springboot API</h4>
           <p>
-            Myself and a fellow northcoder have been working toward creating a
+            Myself and a fellow northcoder have been working toward creating an
             animal santuary react webapp. Currently the sanctuary only has a
-            facebook profile live. We are hoping to construct the useability and
-            design to provide easy adoption of rabbits and guinea pigs and
-            separate some of the administration and make it attractive for
-            potential rescuers.
+            facebook profile live. We are hoping to construct a webapp with
+            useability to provide easy adoption of rabbits and guinea pigs and
+            separate some of the administration for sanctuary workers. Also a
+            design that makes it attractive for potential rescuers.
           </p>
           <p className="mt-3">
             {" "}
