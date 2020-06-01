@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.006a5851.chunk.css",
-    "main.js": "/static/js/main.0fe5c52d.chunk.js",
-    "main.js.map": "/static/js/main.0fe5c52d.chunk.js.map",
+    "main.css": "/static/css/main.c89e267b.chunk.css",
+    "main.js": "/static/js/main.d93b9f40.chunk.js",
+    "main.js.map": "/static/js/main.d93b9f40.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3d300486.js",
     "runtime-main.js.map": "/static/js/runtime-main.3d300486.js.map",
     "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.f5b3eab5.chunk.js": "/static/js/2.f5b3eab5.chunk.js",
-    "static/js/2.f5b3eab5.chunk.js.map": "/static/js/2.f5b3eab5.chunk.js.map",
+    "static/js/2.1b3649e1.chunk.js": "/static/js/2.1b3649e1.chunk.js",
+    "static/js/2.1b3649e1.chunk.js.map": "/static/js/2.1b3649e1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.91ff663f0fc079005a38984cda7aa726.js": "/precache-manifest.91ff663f0fc079005a38984cda7aa726.js",
+    "precache-manifest.d2e9ea48ba0aa3a8b5a5ad80a2e3789e.js": "/precache-manifest.d2e9ea48ba0aa3a8b5a5ad80a2e3789e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
-    "static/css/main.006a5851.chunk.css.map": "/static/css/main.006a5851.chunk.css.map",
-    "static/js/2.f5b3eab5.chunk.js.LICENSE.txt": "/static/js/2.f5b3eab5.chunk.js.LICENSE.txt",
+    "static/css/main.c89e267b.chunk.css.map": "/static/css/main.c89e267b.chunk.css.map",
+    "static/js/2.1b3649e1.chunk.js.LICENSE.txt": "/static/js/2.1b3649e1.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/static/media/1.ec2882da.jpg",
     "static/media/10.jpg": "/static/media/10.e840bb0c.jpg",
     "static/media/2.jpg": "/static/media/2.19e1e303.jpg",
@@ -25,6 +25,8 @@
     "static/media/8.jpg": "/static/media/8.32cac047.jpg",
     "static/media/9.jpg": "/static/media/9.501c15f5.jpg",
     "static/media/CV1.png": "/static/media/CV1.a4287803.png",
+    "static/media/GuardNews.png": "/static/media/GuardNews.da0ba358.png",
+    "static/media/GuardNewsSearch.png": "/static/media/GuardNewsSearch.577f0c2f.png",
     "static/media/Rob_Haworth.png": "/static/media/Rob_Haworth.a7dc4469.png",
     "static/media/RobertHaworthCV.pdf": "/static/media/RobertHaworthCV.bfd7cf02.pdf",
     "static/media/RobertHaworthCV1.pdf": "/static/media/RobertHaworthCV1.85aa6ded.pdf",
@@ -38,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.3d300486.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.f5b3eab5.chunk.js",
-    "static/css/main.006a5851.chunk.css",
-    "static/js/main.0fe5c52d.chunk.js"
+    "static/js/2.1b3649e1.chunk.js",
+    "static/css/main.c89e267b.chunk.css",
+    "static/js/main.d93b9f40.chunk.js"
   ]
 }
