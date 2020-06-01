@@ -7,8 +7,8 @@ export default function NewProjects() {
       <h2 className="py-3 mb-0 text-center">New Projects / Learning</h2>
       <div className="underline"></div>
       <Row className="py-4 text-center">
-        <Col xs={{ span: 12 }}>
-          <h4>Animal Santuary React App</h4>
+        <Col xs={{ span: 12 }} md lg={{ span: 6 }}>
+          <h4>Animal Santuary React App with Java Springboot API</h4>
           <p>
             Myself and a fellow northcoder have been working toward creating a
             animal santuary react webapp. Currently the sanctuary only has a
@@ -17,15 +17,36 @@ export default function NewProjects() {
             separate some of the administration and make it attractive for
             potential rescuers.
           </p>
-        </Col>
-        <Col xs={{ span: 12 }}>
-          <h4>Java Springboot API</h4>
-          <p>
-            This will be the back end API for administrator to update animals
-            details / adoption information. We decided to try and challenege
-            ourselves in learning a new language and also implement new tech.
-            Flyway, Docker and Springboot specifically.
+          <p className="mt-3">
+            {" "}
+            The back end API is being built using Java, Springboot Flyway and
+            Docker. This was utilised to challenge ourselves to learn new
+            languages and technologies. In the process of helping the sanctuary
+            by implementing a simple animal database with adoption info etc.
           </p>
+        </Col>
+        <Col xs={{ span: 12 }} md lg={{ span: 6 }}>
+          <h4>React Native Mobile</h4>
+          <p>
+            This was a small test sprint completed recently which utilises the
+            guardian news api to serve as news search. This helped me learn to
+            implement forms, swipeable pages and further react-native syntax
+            knowledge.
+          </p>
+          <a href="https://github.com/roberthaworth1234/tote-test">
+            <img
+              className="newProjects"
+              src={require("../Images/GuardNews.png")}
+              alt="React native guardian news search app"
+            />
+          </a>
+          <a href="https://github.com/roberthaworth1234/tote-test">
+            <img
+              className="newProjects"
+              src={require("../Images/GuardNewsSearch.png")}
+              alt="React native guardian news search app"
+            />
+          </a>
         </Col>
       </Row>
     </Container>

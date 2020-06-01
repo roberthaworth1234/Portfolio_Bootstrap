@@ -32,21 +32,7 @@ a.nav-link a {
   text-decoration: none;
   color: lightgrey;
 }
-.hidden-text {
-  position: relative;
-  font-size: 19px;
-  font-weight: bold;
-  color: white;
-  text-shadow: 0.3px 2px black;
-  bottom: 40%;
-  z-index: -2;
-}
-div.p-0 d-flex flex-column align-items-center:focus {
-  z-index: -10;
-}
-div.p-0 d-flex flex-column align-items-center:hover {
-  z-index: -10;
-}
+
 p,
 .list-group-item {
   font-family: "Roboto Condensed", sans-serif !important;
@@ -111,6 +97,9 @@ button.btn.btn-secondary {
   height: 60px;
   width: 60px;
 }
+
+/*Interests Gallery Section*/
+
 #interests-heading {
   width: 100%;
 }
@@ -122,6 +111,21 @@ button.btn.btn-secondary {
   width: 200px;
 }
 .interests:hover {
+  z-index: -10;
+}
+.hidden-text {
+  position: relative;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0.3px 2px black;
+  bottom: 40%;
+  z-index: -2;
+}
+div.p-0 d-flex flex-column align-items-center:focus {
+  z-index: -10;
+}
+div.p-0 d-flex flex-column align-items-center:hover {
   z-index: -10;
 }
 .references {
@@ -136,6 +140,10 @@ button.btn.btn-secondary {
   color: grey !important;
 }
 
+.newProjects {
+  margin: 10px;
+  height: 200px;
+}
 @media only screen and (max-width: 480px) {
   h4.p-4 {
     margin: 0px 10px 0px 50px;

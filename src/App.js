@@ -99,7 +99,7 @@ export default class App extends Component {
                          "https://img.icons8.com/color/48/000000/postgreesql.png",
                        img: require("./Images/Screenshot5.png"),
                        description:
-                         "A Solo Back & Front-End Project. I built the back end using Knex.js, express and postgreSQL to produce my API.  Built employing test driven development throughout. The front end using React to serve up a aggregation board 'reddit' style website.",
+                         "A solo back-end & front-end project. I built the back end using Knex.js, express and postgreSQL to produce my API.  Built employing test driven development throughout. The front-end using React to serve up a aggregation board 'reddit' style website.",
                        title: "Dreaddit News - Back End API & React Front-End",
                        hostedURL: "https://rh-nc-news-app.herokuapp.com/",
                        githubURL:
@@ -123,7 +123,7 @@ export default class App extends Component {
                        icon: "https://img.icons8.com/color/48/000000/redux.png",
                        img: require("./Images/Screenshot6.png"),
                        description:
-                         "This was my first foray into building a desktop game.  But also encorporated Redux state management tool. It helped me develop building my own movement functions and also having the ability to have state managed and not having to drill down Props as used in previous Apps",
+                         "This was my first foray into building a desktop game.  But also encorporated Redux state management tool. It helped me develop building my own 'movement' functions and also having the ability to have state managed and not having to drill down Props, as used in previous Apps",
                        title: "React-Redux Desktop Game",
                        hostedURL: "https://puzzle-game-beach.herokuapp.com/",
                        githubURL:
@@ -134,7 +134,7 @@ export default class App extends Component {
                        icon: "https://img.icons8.com/nolan/64/react-native.png",
                        img: require("./Images/Screenshot8.png"),
                        description:
-                         "A nice to have option for our Ambiscape sound generator was a React-native mobile version.  It gave me insight into the differences building our Web App, as a mobile version.  Learning styling syntax, spiking audio libraries such as react native audio/video and expo-av. And the difficulties of matching the audio functionality across two platforms.",
+                         "A nice to have option for our Ambiscape sound generator project was a React-native mobile version.  It gave me insight into the differences building our Web App, as a mobile version.  Learning styling syntax, spiking audio libraries such as react native audio/video and expo-av. And the difficulties of matching the audio functionality across two platforms.",
                        title: "Ambiscape - React native mobile ",
                        hostedURL:
                          "https://github.com/Team-Hypnotoad/FE-Ambiscape-Mobile",
