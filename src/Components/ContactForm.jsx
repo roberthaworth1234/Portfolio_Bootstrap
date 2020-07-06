@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import axios from "axios";
 
-const API_PATH =
-  "http://localhost:1992/react-contact-form/api/contact/index.php";
+const API_PATH = "http://localhost:1992/bootstrap-app/api/contact/index.php";
 
 export default class ContactForm extends Component {
   state = {
