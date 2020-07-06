@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap";
-import axios from "axios";
-
-const API_PATH = "http://localhost/bootstrap-app/api/contact/index.php";
+import { Form, Button } from "react-bootstrap";
+import emailjs from "emailjs-com";
 
 export default class ContactForm extends Component {
   state = {
@@ -11,83 +9,133 @@ export default class ContactForm extends Component {
     message: ""
   };
 
-  handleSubmit(e) {
-    e.preventDefault();
-    console.log(this.state);
-    axios({
-      method: "POST",
-      url: "http://localhost:3002/send",
-      data: this.state
-    }).then(response => {
-      if (response.data.status === "success") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
-    });
-  }
+  sendMessage(event) {
+    event.preventDefault();
 
-  resetForm() {
-    this.setState({ name: "", email: "", message: "" });
+    const templateParams = {
+      from_name: this.state.name + " (" + this.state.email + ")",
+      to_name: "roberthaworth1234@hotmail.com",
+      feedback: this.state.message
+    };
+    emailjs
+      .send(
+        "default_service",
+        "template_bf4rBkKK",
+        templateParams,
+        "user_KM6pkjouzJoje2c3ESWtz"
+      )
+      .then(
+        function(response) {
+          alert("Your message has successfully sent!");
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function(err) {
+          alert("Your message was not able to be sent");
+        }
+      );
+    this.setState({
+      name: "",
+      email: "",
+      feedback: ""
+    });
   }
 
   render() {
     return (
-      <div className="App">
-        <form
+      <div>
+        <h3 className="text-center py-2">Contact me</h3>
+        <Form
+          className="d-flex flex-column align-items-center"
           id="contact-form"
-          onSubmit={this.handleSubmit.bind(this)}
+          required
           method="POST"
         >
-          <div className="form-group">
+          <div className="w-50 form-group">
             <label htmlFor="name">Name</label>
             <input
               type="text"
               className="form-control"
               id="name"
+              name="name"
+              placeholder="Your name.."
               value={this.state.name}
-              onChange={this.onNameChange.bind(this)}
+              onChange={this.handleInputChange.bind(this)}
+              required
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
-            <input
+          <Form.Group controlId="email" className="w-50">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control
               type="email"
-              className="form-control"
-              id="email"
-              aria-describedby="emailHelp"
+              name="email"
+              placeholder="Your email.."
               value={this.state.email}
-              onChange={this.onEmailChange.bind(this)}
+              onChange={this.handleInputChange.bind(this)}
+              required
             />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea
-              className="form-control"
+          </Form.Group>
+          <Form.Group className="w-50">
+            <Form.Label>Message</Form.Label>
+            <Form.Control
               rows="5"
               id="message"
+              name="message"
+              placeholder="Type your message.."
+              required
               value={this.state.message}
-              onChange={this.onMessageChange.bind(this)}
+              onChange={this.handleInputChange.bind(this)}
             />
-          </div>
-          <Button type="submit" className="btn btn-primary">
+          </Form.Group>
+          {/* <label htmlFor="name">Name</label>
+          <input
+            className="form-control w-50"
+            id="name"
+            name="name"
+            onChange={this.handleInputChange.bind(this)}
+            placeholder="Your name.."
+            required
+            value={this.state.name}
+          />
+          <br />
+          <label htmlFor="email">Email</label>
+          <input
+            className="w-50"
+            id="email"
+            name="email"
+            onChange={this.handleInputChange.bind(this)}
+            placeholder="Your email address.."
+            required
+            value={this.state.email}
+          />
+          <br />
+          <label htmlFor="message">Message</label>
+          <textarea
+            className="w-50"
+            id="message"
+            name="feedback"
+            onChange={this.handleInputChange.bind(this)}
+            placeholder="Type your message.."
+            required
+            value={this.state.feedback}
+          />
+          <br /> */}
+          <Button
+            type="Submit"
+            className="btm btn-primary mb-3"
+            onClick={this.sendMessage.bind(this)}
+          >
             Submit
           </Button>
-        </form>
+        </Form>
       </div>
     );
   }
 
-  onNameChange(event) {
-    this.setState({ name: event.target.value });
-  }
-
-  onEmailChange(event) {
-    this.setState({ email: event.target.value });
-  }
-
-  onMessageChange(event) {
-    this.setState({ message: event.target.value });
+  handleInputChange(event) {
+    event.preventDefault();
+    const target = event.target;
+    const name = target.name;
+    const value = target.value;
+    this.setState({ [name]: value });
   }
 }

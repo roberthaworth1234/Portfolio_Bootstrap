@@ -144,7 +144,7 @@ export default class App extends Component {
         <Router>
           <Bio path="/" />
           <NorthcodersExperience path="/Experience" />
-          {/* <ContactForm path="/Contact" /> */}
+          <ContactForm path="/Contact" />
         </Router>
         <section className="darker">
           <Container>
