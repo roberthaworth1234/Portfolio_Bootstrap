@@ -16,9 +16,9 @@ export default function Navigation() {
           <Nav className="mr-auto px-2">
             <Link to="/Experience">Experience</Link>
           </Nav>{" "}
-          <Nav className="mr-auto px-2">
+          {/* <Nav className="mr-auto px-2">
             <Link to="/Contact">Contact</Link>
-          </Nav>
+          </Nav> */}
           {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">

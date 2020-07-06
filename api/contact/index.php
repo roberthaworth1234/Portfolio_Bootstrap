@@ -17,7 +17,7 @@ if ($_POST)
 
 	// data
 
-	$msg = $_POST['number'] . $_POST['message'];
+	$msg = $_POST['message'];
 
 	// Headers
 
