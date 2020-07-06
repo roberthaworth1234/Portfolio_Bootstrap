@@ -36,21 +36,22 @@ export default class ContactForm extends Component {
     this.setState({
       name: "",
       email: "",
-      feedback: ""
+      message: ""
     });
   }
 
   render() {
     return (
       <div>
-        <h3 className="text-center py-2">Contact me</h3>
+        <h3 className="my-3 text-center py-2">Contact me</h3>
+        <div className="underline mb-3"></div>
         <Form
           className="d-flex flex-column align-items-center"
           id="contact-form"
           required
           method="POST"
         >
-          <div className="w-50 form-group">
+          <div className="mt-2 w-50 form-group">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -121,7 +122,7 @@ export default class ContactForm extends Component {
           <br /> */}
           <Button
             type="Submit"
-            className="btm btn-primary mb-3"
+            className="btm btn-primary my-4"
             onClick={this.sendMessage.bind(this)}
           >
             Submit
