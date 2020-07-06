@@ -13,6 +13,7 @@ export default class ContactForm extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    console.log(this.state);
     axios({
       method: "POST",
       url: "http://localhost:3002/send",
