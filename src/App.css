@@ -144,6 +144,19 @@ div.p-0 d-flex flex-column align-items-center:hover {
   margin: 10px;
   height: 200px;
 }
+
+/*Contact Form*/
+.name-validation {
+  font-size: 12px;
+  background-color: rgb(214, 210, 210);
+  color: rgb(194, 45, 45);
+}
+.email-validation {
+  font-size: 12px;
+  background-color: rgb(214, 210, 210);
+  color: rgb(194, 45, 45);
+}
+
 @media only screen and (max-width: 480px) {
   h4.p-4 {
     margin: 0px 10px 0px 50px;
