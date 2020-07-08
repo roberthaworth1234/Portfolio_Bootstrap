@@ -21,8 +21,19 @@ export default class ContactForm extends Component {
   };
 
   validateName = (name, email) => {
-    if (!name.length) {
-      return this.setState({ nameError: "↑ Please enter a name", name: "" });
+    if (!name.length && this.validate(email)) {
+      return this.setState({
+        nameError: "↑ Please enter your name",
+        name: "",
+        emailError: "↑ Please enter a valid email",
+        email: ""
+      });
+    } else if (!name.length && !this.validate(email)) {
+      return this.setState({
+        nameError: "↑ Please enter your name",
+        name: "",
+        emailError: ""
+      });
     } else if (name.length && this.validate(email)) {
       return this.setState({
         nameError: "",
